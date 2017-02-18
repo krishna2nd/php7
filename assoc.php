@@ -1,3 +1,5 @@
+<?php
+
 function assoc_diff_recursive($array1, $array2, &$diffArray=array()) {
     foreach ($array2 as $key => $val) {
         if (isset($val) &&
@@ -13,3 +15,5 @@ function assoc_diff_recursive($array1, $array2, &$diffArray=array()) {
             assoc_diff_recursive($array1[$key], $val, $diffArray[$key]);
     }
 }
+
+?>
